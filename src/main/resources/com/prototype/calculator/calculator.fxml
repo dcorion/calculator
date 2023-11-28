@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="327.0" prefWidth="260.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prototype.calculator.CalculatorController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <TextField maxHeight="39.0" maxWidth="220.0" minHeight="39.0" minWidth="220.0" prefHeight="39.0" prefWidth="220.0" />
+   <HBox prefHeight="41.0" prefWidth="212.0" spacing="15.0">
+      <children>
+        <Button onAction="#onHelloButtonClick" prefHeight="41.0" prefWidth="43.0" text="7" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="8" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="9" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="/">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <HBox prefHeight="41.0" prefWidth="212.0" spacing="15.0">
+      <children>
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="4" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="5" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="6" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="x">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <HBox prefHeight="41.0" prefWidth="212.0" spacing="15.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#onButton1Click" prefHeight="41.0" prefWidth="43.0" text="1" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="2" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="3" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="-">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <HBox prefHeight="41.0" prefWidth="212.0" spacing="15.0">
+      <children>
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="AC" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="0" />
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="=">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font></Button>
+         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="+">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </Button>
+      </children>
+   </HBox>
+</VBox>

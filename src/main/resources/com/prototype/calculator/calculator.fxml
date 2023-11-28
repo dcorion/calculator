@@ -5,17 +5,20 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="TOP_CENTER" prefHeight="327.0" prefWidth="260.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prototype.calculator.CalculatorController">
+<VBox alignment="TOP_CENTER" prefHeight="329.0" prefWidth="260.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prototype.calculator.CalculatorController">
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
-   <TextField maxHeight="39.0" maxWidth="220.0" minHeight="39.0" minWidth="220.0" prefHeight="39.0" prefWidth="220.0" />
+   <TextField fx:id="displayText" alignment="CENTER_RIGHT" maxHeight="39.0" maxWidth="220.0" minHeight="39.0" minWidth="220.0" prefHeight="39.0" prefWidth="220.0" text="">
+      <font>
+         <Font size="18.0" />
+      </font></TextField>
    <HBox prefHeight="41.0" prefWidth="212.0" spacing="15.0">
       <children>
-        <Button onAction="#onHelloButtonClick" prefHeight="41.0" prefWidth="43.0" text="7" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="8" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="9" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="/">
+         <Button mnemonicParsing="false" onAction="#onButton7Click" prefHeight="41.0" prefWidth="43.0" text="7" />
+         <Button mnemonicParsing="false" onAction="#onButton8Click" prefHeight="41.0" prefWidth="43.0" text="8" />
+         <Button mnemonicParsing="false" onAction="#onButton9Click" prefHeight="41.0" prefWidth="43.0" text="9" />
+         <Button mnemonicParsing="false" onAction="#onDivideButtonClick" prefHeight="41.0" prefWidth="43.0" text="/">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>
@@ -24,10 +27,10 @@
    </HBox>
    <HBox prefHeight="41.0" prefWidth="212.0" spacing="15.0">
       <children>
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="4" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="5" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="6" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="x">
+         <Button mnemonicParsing="false" onAction="#onButton4Click" prefHeight="41.0" prefWidth="43.0" text="4" />
+         <Button mnemonicParsing="false" onAction="#onButton5Click" prefHeight="41.0" prefWidth="43.0" text="5" />
+         <Button mnemonicParsing="false" onAction="#onButton6Click" prefHeight="41.0" prefWidth="43.0" text="6" />
+         <Button mnemonicParsing="false" onAction="#onMultiplyButtonClick" prefHeight="41.0" prefWidth="43.0" text="x">
             <font>
                <Font name="System Bold" size="18.0" />
             </font>
@@ -37,9 +40,9 @@
    <HBox prefHeight="41.0" prefWidth="212.0" spacing="15.0">
       <children>
          <Button mnemonicParsing="false" onAction="#onButton1Click" prefHeight="41.0" prefWidth="43.0" text="1" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="2" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="3" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="-">
+         <Button mnemonicParsing="false" onAction="#onButton21Click" prefHeight="41.0" prefWidth="43.0" text="2" />
+         <Button mnemonicParsing="false" onAction="#onButton3Click" prefHeight="41.0" prefWidth="43.0" text="3" />
+         <Button mnemonicParsing="false" onAction="#onSubtractButtonClick" prefHeight="41.0" prefWidth="43.0" text="-">
             <font>
                <Font name="System Bold" size="18.0" />
             </font>
@@ -48,13 +51,13 @@
    </HBox>
    <HBox prefHeight="41.0" prefWidth="212.0" spacing="15.0">
       <children>
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="AC" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="0" />
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="=">
+         <Button mnemonicParsing="false" onAction="#onAllClearButtonClick" prefHeight="41.0" prefWidth="43.0" text="AC" />
+         <Button mnemonicParsing="false" onAction="#onButton0Click" prefHeight="41.0" prefWidth="43.0" text="0" />
+         <Button mnemonicParsing="false" onAction="#onEqualsButtonClick" prefHeight="41.0" prefWidth="43.0" text="=">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font></Button>
-         <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0" text="+">
+         <Button mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="41.0" prefWidth="43.0" text="+">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>

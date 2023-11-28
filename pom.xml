@@ -36,7 +36,17 @@
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
-    </dependency>              </dependencies>
+    </dependency>
+
+    <dependency>
+      <groupId>org.example</groupId>
+      <artifactId>math</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/resources/math-1.0-SNAPSHOT.jar</systemPath>
+    </dependency>
+
+  </dependencies>
 
   <build>
         <plugins>
@@ -58,7 +68,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>com.prototype.calculator/com.prototype.calculator.HelloApplication</mainClass>
+              <mainClass>com.prototype.calculator/com.prototype.calculator.Calculator</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
